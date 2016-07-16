@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="30dp" 
+    android:background="@drawable/menu_bg">"
+    <LinearLayout 
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageButton
+            android:id="@+id/user_ico"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#000000">
+        </ImageButton>"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录／注册"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    
+   <ListView
+       android:id="@+id/menu_listview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/menu_header"
+       android:paddingBottom="30dp"
+       android:paddingTop="20dp"
+       android:divider="@null"
+       android:textColor="#ffffff"
+       android:cacheColorHint="#00000000"
+       >
+   </ListView>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/switch1"
+        android:layout_marginTop="24dp"
+        android:layout_alignTop="@+id/menu_listview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/switch2"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        tools:targetApi="ice_cream_sandwich" />
+</RelativeLayout>

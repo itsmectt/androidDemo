@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#e7e2e3"
+    tools:context=".MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#d4715e"
+        android:orientation="horizontal">
+       
+        <ImageButton 
+            android:id="@+id/menu_imgbtn"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:background="@drawable/leftmenu_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp">
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首 页"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            ></TextView>
+    </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"                
+                >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/settings_first_item"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="地图浏览"                    
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/settings_nomal_item"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="运动轨迹记录"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/settings_nomal_item"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="消耗能量计算"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/settings_last_item"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="计步器"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="125dp"
+        android:background="#d4715e"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/icon_map"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/map"
+            android:background="#d4715e"/>
+        <ImageButton
+            android:id="@+id/icon_track"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/track"
+            android:background="#d4715e"/>
+        <ImageButton
+            android:id="@+id/icon_record"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/record"
+            android:background="#d4715e"/>
+        <ImageButton
+            android:id="@+id/icon_step"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/step"
+            android:background="#d4715e"/>
+        </LinearLayout>
+
+</LinearLayout>

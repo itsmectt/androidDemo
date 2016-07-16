@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slidemenudemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <drawable name="normal">#e7e2e3</drawable>
+    <drawable name="pressed">#888288</drawable>
+    <string name="pref_title_add_friends_to_messages">消息设置</string>
+    <string-array name="pref_example_list_titles">
+        <item>总是接收</item>
+        <item>从不接收</item>
+        <item>提醒但不通知</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+</resources>
